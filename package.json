@@ -16,5 +16,8 @@
     "url": "https://github.com/Whoistolu/Keep-It/issues"
   },
   "homepage": "https://github.com/Whoistolu/Keep-It#readme",
-  "description": ""
+  "description": "A simple note-taking app with a clean and user-friendly interface.",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
