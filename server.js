@@ -2,6 +2,14 @@ const express = require('express')
 const app = express()
 const PORT = 8383
 
+
+// data
+let data = {
+    naem: "Tolu",
+    age: 23,
+    job: "Developer"
+}
+
 // Web endpoints
 
 app.get("/", (req, res) => {
