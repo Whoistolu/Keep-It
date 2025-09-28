@@ -2,13 +2,21 @@ const express = require('express')
 const app = express()
 const PORT = 8383
 
+// Web endpoints
+
 app.get("/", (req, res) => {
-    console.log("My server is running", req.method)
-    res.sendStatus(200)
+    res.send("<h1>Homepage</h1>")
 })
 
 app.get("/dashboard", (req, res) => {
-    console.log("Dashboard route accessed")
-    res.send("Welcome to the Dashboard")
+    res.send("<h1>Dashboard</h1>")
 })
-app.listen(PORT, () => console.log(`Server has started on: ${PORT}`)) 
+
+// API endpoints
+app.get("/api/data", (req, res) => {
+    console.log("This is for data")
+    res.send(data)
+})
+
+
+app.listen(PORT, () => console.log(`Server has started on: ${PORT}`))
