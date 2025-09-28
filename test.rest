@@ -5,3 +5,6 @@ GET http://127.0.0.1:3000
 ### TEST GET /dashboard WEBSITE
 
 GET http://127.0.0.1:3000/dashboard
+
+### DATA ENDPOINT
+GET http://127.0.0.1:3000/api/data
